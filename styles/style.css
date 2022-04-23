@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+body {
+    border: #000 solid;
+    background-image: linear-gradient(to bottom, #1950F1,#51ED17 );
+}
+
+.navegate {
+    width: 84.4;
+    height: 4.7em;
+    background: scroll #1fec04;
+    flex-wrap: nowrap;
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: #000 solid;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffe313;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.famous {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+    color: #0507a9;
+    letter-spacing: 2px;
+}
+
+.famous:hover {
+    animation: distortion 5s ease-in-out infinite;
+}
+
+.body-title {
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 5pc;
+    color: #0507a9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.submit-iphone {
+    margin: 7em auto;
+    height: 55px;
+    padding: 13px 70px;
+    color: #ffe015;
+    border: #0507a9 solid;
+    border-radius: 10px;
+    background-color: #1fec04;
+    width: 25%;
+    font-size: 17.9px;
+}
+
+a:hover {
+    color: #5d0b65;
+}
+
+.submit-iphone:hover {
+    animation: pulsate 1.9s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 38px #1fec04,
+            0 0 50px #0507a9;
+    }
+}
+
+@keyframes distortion {
+    0% {
+        transform: translateX(0px);
+        color: rgb(255, 135, 15);
+    }
+
+    50% {
+        transform: translateX(-35px);
+        color: rgb(255, 135, 15);
+    }
+
+    100% {
+        transform: translateX(0px);
+        color: rgb(255, 135, 15);
+    }
+}
